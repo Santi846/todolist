@@ -21,8 +21,19 @@
     overflow-wrap: anywhere;
 }
 
-.task_icon{
+.task_icon_check_off{
     width: 25px;
     height: 25px;
     margin: 5px 40px;
+}
+
+.task_icon_check_on{
+    width: 25px;
+    height: 25px;
+    margin: 5px 40px;
+}
+
+.task_container.complete {
+    background: #5a01a7;
+    text-decoration: line-through;
 }

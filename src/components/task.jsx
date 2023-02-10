@@ -1,5 +1,7 @@
 import React from "react";
 import './styles/task.css';
+import { AiOutlineBorder, AiOutlineCheckSquare } from "react-icons/ai";
+
 
 
 export function Task ({text}) {
@@ -9,7 +11,7 @@ export function Task ({text}) {
                 {text}
             </div>
             <div className="task_icon">
-                Eliminar
+            <AiOutlineBorder></AiOutlineBorder>           
             </div>
         </div>
     );

@@ -7,7 +7,7 @@ function App() {
       <h1 className='title'>Tareas para hacer</h1>
       <div className='todo_list'>
       <h1 className='mini_title'>Mis tareas</h1>
-      <Task text='Aprender Recat'></Task>
+      <Task text='Aprender React'></Task>
       </div>
     </div>
   );

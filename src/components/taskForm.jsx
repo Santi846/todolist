@@ -7,18 +7,19 @@ export function TaskForm (props ) {
     const [input, setInput] = useState('');
 
     const manageChange = e => {
+        //tarket.value is input from end user
         setInput(e.target.value);
-        console.log(e.target.value);
     }
 
     const manageSend = e => {
         e.preventDefault();
-        console.log('Enviando formulario');
+
         const newTask = {
             id: uuidv4(),
-            text:input,
-            complete:false
+            text: input,
+            complete: false
         }
+
         props.onSubmit(newTask);
     }
 

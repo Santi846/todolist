@@ -4,16 +4,43 @@ import './styles/taskList.css';
 import { TaskForm } from "./taskForm";
 import { Task } from "./task";
 
-export function TaskList () {
+export function TaskList (text) {
 
-    const [tasks,setTask] = useState([]);
+    const [tasks, setTask] = useState([]);
 
     const addTask = task => {
-        if (task.text.trim()) {
+        if (text) {
             task.text = text.task.trim();
+
             const updatedTasks = [task,...tasks];
+
             setTask(updatedTasks);
         }
+
+        // if (task.text.trim()) {
+        //     task.text = text.task.trim();
+
+        //     const updatedTasks = [task,...tasks];
+
+        //     setTask(updatedTasks);
+        // }
+    }
+
+    const deleteTask = id => {
+        const updatedTasks = tasks.filter(task => task.id !== id);
+        setTask(updatedTasks);
+    }
+    
+    const completeTask = id => {
+        const updatedTasks = tasks.map( task => {
+
+            if (task.id === id) {
+              task.complete = !task.complete;  
+            }
+            return task;
+        });
+
+        setTask(updatedTasks);
     }
 
     return (
@@ -26,6 +53,9 @@ export function TaskList () {
                     key={task.id}
                     id={task.id}
                     text={task.text}
+                    complete={task.complete}
+                    completeTask={completeTask}
+                    deleteTask={deleteTask}
                     ></Task>
                     )
                 }

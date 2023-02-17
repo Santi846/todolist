@@ -9,21 +9,13 @@ export function TaskList (text) {
     const [tasks, setTask] = useState([]);
 
     const addTask = task => {
-        if (text) {
-            task.text = text.task.trim();
+
+        if (task.text !== '') {
 
             const updatedTasks = [task,...tasks];
 
             setTask(updatedTasks);
         }
-
-        // if (task.text.trim()) {
-        //     task.text = text.task.trim();
-
-        //     const updatedTasks = [task,...tasks];
-
-        //     setTask(updatedTasks);
-        // }
     }
 
     const deleteTask = id => {

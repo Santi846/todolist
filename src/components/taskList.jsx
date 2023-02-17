@@ -15,6 +15,8 @@ export function TaskList (text) {
             const updatedTasks = [task,...tasks];
 
             setTask(updatedTasks);
+
+
         }
     }
 

@@ -21,6 +21,10 @@
     overflow-wrap: anywhere;
 }
 
+.task_text.text:hover{
+    background: #3b3b4f;
+}
+
 .task_icon_check_off{
     width: 25px;
     height: 25px;
@@ -33,7 +37,34 @@
     margin: 5px 40px;
 }
 
-.task_container.complete {
+.task_container_icons:hover{
+    background: #3b3b4f;
+}
+
+.task_container_complete {
+    width: 500px;
+    min-height: 65px;
     background: #5a01a7;
     text-decoration: line-through;
+    margin: 5px 25px;
+    padding: 8px 15px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid white;
+    cursor: pointer;
+    
+}
+
+.task_container:nth-child(3n + 1) {
+    background: #1b1b32;
+}
+
+.task_container:nth-child(3n + 2) {
+    background: #2a2a40;
+}
+
+.task_container:nth-child(3n + 3) {
+    background: #3b3b4f;
 }

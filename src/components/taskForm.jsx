@@ -8,7 +8,7 @@ export function TaskForm (props ) {
 
     const manageChange = e => {
         //tarket.value is input from end user
-        setInput(e.target.value);
+        setInput(e.target.value); 
     }
 
     const manageSend = e => {
@@ -19,9 +19,11 @@ export function TaskForm (props ) {
             text: input,
             complete: false
         }
-
+        //TODO: save state in local storaage for saving when updating the page
         props.onSubmit(newTask);
+           
     }
+    
 
     return (
         <form className="task-form" onSubmit={manageSend}>

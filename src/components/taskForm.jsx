@@ -14,6 +14,7 @@ export function TaskForm (props ) {
     const manageSend = e => {
         e.preventDefault();
 
+
         const newTask = {
             id: uuidv4(),
             text: input,
@@ -22,6 +23,8 @@ export function TaskForm (props ) {
 
         props.onSubmit(newTask);
     }
+
+
 
     return (
         <form className="task-form" onSubmit={manageSend}>

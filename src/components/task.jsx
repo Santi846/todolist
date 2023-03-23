@@ -30,9 +30,9 @@ export function Task({ id, text, complete, completeTask, deleteTask}) {
             <AiOutlineRest className='task_icon'></AiOutlineRest> 
           </div>
           <div className="task_container_icons">
-            <AiOutlineOrderedList className='task_icon' type="button" onClick={hideModal}>Open</AiOutlineOrderedList>
+            <AiOutlineOrderedList className='task_icon' type="button" onClick={showModal}>Open</AiOutlineOrderedList>
           </div>
-          <Modal show={show} handleClose={hideModal}>Modal</Modal>
+          <Modal show={show} handleClose={hideModal} text={text}></Modal>
         </div>
       );    
 }

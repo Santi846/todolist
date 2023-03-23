@@ -1,0 +1,26 @@
+.modal_main{
+    position:fixed;
+    width: 100px;
+    height: 100px;
+    background: white;
+    color: black;
+}
+
+.modal {
+    position: fixed;
+    width:50px;
+    height: 50px;
+    display:block;
+    color: black;
+}
+
+.modal_none {
+    display:none;
+}
+
+.modal_input{
+    width: 50px;
+    height: 5px;
+    border: black solid 1px;
+    border-radius: 3px;
+}

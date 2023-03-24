@@ -1,9 +1,14 @@
 .modal_main{
     position:fixed;
-    width: 100px;
-    height: 100px;
-    background: white;
-    color: black;
+    left: 65%;
+    width: 30rem;
+    height: 5rem;
+    background: rgb(15, 92, 98);
+    color: rgb(255, 255, 255);
+    border: solid rgb(255, 255, 255) 5px;
+    border-radius: 3px;
+    justify-content: left;
+    text-align: left;
 }
 
 .modal {
@@ -12,6 +17,7 @@
     height: 50px;
     display:block;
     color: black;
+    padding: 1rem;
 }
 
 .modal_none {
@@ -19,8 +25,9 @@
 }
 
 .modal_input{
-    width: 50px;
+    width: 80%;
     height: 5px;
     border: black solid 1px;
     border-radius: 3px;
+    display: flex;
 }

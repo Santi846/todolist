@@ -2,16 +2,12 @@ import './App.css';
 import { TaskList } from './components/taskList';
 
 function App() {
-
   
-
   return (
     <div className="App">
-      <h1 className='title'>Tareas para hacer</h1>
+      <h1 className='title'>To Do</h1>
       <div className='todo_list'>
-      <h1 className='mini_title'>Mis tareas</h1>
-      {/* <TaskForm></TaskForm> */}
-      {/* <Task text='Aprender React'complete={setState}></Task> */}
+      <h1 className='mini_title'>Tasks</h1>
       <TaskList></TaskList>
       </div>
     </div>
